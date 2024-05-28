@@ -60,6 +60,16 @@ export default{
 }
 
 .book-now:hover {
-  background-color: #ff3c4d;
+  animation: wiggle 0.3s ease infinite alternate;
 }
+
+@keyframes wiggle {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+
 </style>
